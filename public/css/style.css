@@ -1,3 +1,62 @@
 body{
-    background-color: hotpink;
+    background-color: olivedrab;
+    background-image: url("../img/fireworks.jpg");
+    color: white;
+}
+
+section{
+    margin:25px;
+    padding-bottom:25px;
+    min-width:300px;
+    max-width:30%;
+    background-color:rgba(255, 50, 50, .5);
+    transition: 500ms;
+}
+
+section:hover{
+    background-color: rgb(56, 216, 104);
+    max-width:90%;
+}
+
+.top{
+    border-bottom:2px solid black;
+}
+
+img{
+    position:fixed;
+    right:5%;
+    bottom:5%;
+    width:50px;
+    height:30px;
+    transition:10000ms;
+}
+
+img:hover{
+    right:50%;
+    bottom:50%;
+    width:50%;
+    height:50%;
+}
+
+ul li{
+    display:block;
+    background-color: rgba(255, 50, 50, .5);
+    width:100%;
+    margin-left:10%;
+    transition:500ms;
+}
+
+ul:hover{
+    background-color: rgb(56, 216, 104);
+}
+
+ul li:hover{
+    text-align:center;
+    background-color: rgb(56, 216, 104);
+    border:2px solid black;
+}
+
+footer{
+    position:absolute;
+    bottom:0%;
 }

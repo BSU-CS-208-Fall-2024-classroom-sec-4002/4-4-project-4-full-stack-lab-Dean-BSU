@@ -3,6 +3,26 @@ link(rel='stylesheet' href='css/style.css')
 
 head
     title My First Full Stack
+    script(src="../js/main.js")
 body
-    h1 Simple TODO APP
-    p TODO: Complete the app!
+    header 
+        p DEAN CUNNINGHAM WEB DEVELOPMENT 2024
+    section.top
+        h1 Simple TODO APP
+        form(action="#" method="POST")
+            label(for="task") Add an item:
+            input(type="text" max="20" name="task")
+            input.awesome(type="submit")
+    section
+        h2 The List
+        ul
+            each i, index in tasks
+                li
+                    form(action="/delete" method="POST")
+                        p(name="task")=`${index+1}\. ${i}`
+                        input(value=`${ids[index]}` name="taskid" hidden)
+                        input(type="submit" value="delete")
+    img#rat(src="../img/friend.png")
+    footer
+        p 
+            a(href="https://glassbeach.band/archive/lp1/bear1" target="_blank") Facebook
